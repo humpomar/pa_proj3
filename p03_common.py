@@ -1,3 +1,6 @@
+from urllib3.exceptions import HTTPError
+
+import requests
 from bs4 import BeautifulSoup
 
 
