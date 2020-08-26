@@ -30,5 +30,6 @@ def collect_all_rows(tables):
     for table in tables:
         rows = find_rows(table)
         for row in rows:
-            all_rows.append(row)
+            if row.find_all('td')[0].text != "-":
+                all_rows.append(row)
     return all_rows
